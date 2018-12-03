@@ -8,5 +8,5 @@ from . import forms
 
 class SignUp(CreateView):
     form_class = forms.UserCreateForm
-    success_urls = reverse('login')
+    success_url = '/login'
     template_name = 'accounts/signup.html'
