@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import (LoginRequiredMixin, PermissionRequiredMi
 from django.urls import reverse_lazy
 from django.views import generic
 
-from groups.models import Group,GroupMember
+from models import Group,GroupMember
 
 class CreateGroup(LoginRequiredMixin,generic.CreateView):
     fields = ('name','description')
