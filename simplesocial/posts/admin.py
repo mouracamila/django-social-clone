@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . import models
+from groups import models
 # Register your models here.
 
 class GroupmemberInline(admin.TabularInline):

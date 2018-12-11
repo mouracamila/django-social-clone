@@ -30,4 +30,4 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-created_at']
-        unique_together = ['user','massage']
+        unique_together = ['user','message']
