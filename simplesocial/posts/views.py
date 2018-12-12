@@ -3,7 +3,7 @@
 # Create your views here.
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-
+from django.contrib import messages
 from django.http import Http404
 from django.views import generic
 
@@ -25,7 +25,7 @@ class UserPost(generic.ListView):
 
     def get_queryset(self):
         try:
-            self.UserPost = User.objects.prefetch_related('posts').get(username__iexact=self.kwargs.get('username'))
+            self.post_user = User.objects.prefetch_related('posts').get(username__iexact=self.kwargs.get('username'))
         except User.DoesNotExist:
             raise Http404
         else:

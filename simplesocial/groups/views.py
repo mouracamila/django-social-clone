@@ -9,7 +9,7 @@ from django.shortcuts import get_object_or_404
 from models import Group, GroupMember
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import IntegrityError
-
+from . import models
 
 class CreateGroup(LoginRequiredMixin,generic.CreateView):
     fields = ('name','description')
