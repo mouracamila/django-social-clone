@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import (LoginRequiredMixin, PermissionRequiredMi
 from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import get_object_or_404
-from models import Group, GroupMember
+from models import Group
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import IntegrityError
 from . import models
