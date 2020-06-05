@@ -39,7 +39,7 @@ dask==0.17.5
 datashape==0.5.4
 decorator==4.3.0
 distributed==1.21.8
-Django==2.1.1
+Django==2.2.13
 django-bootstrap==0.2.4
 django-bootstrap4==0.0.7
 docutils==0.14
